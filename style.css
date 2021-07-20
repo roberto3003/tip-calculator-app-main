@@ -116,7 +116,7 @@ footer .wrapper {
   display: grid;
   grid-template-columns: repeat(
   auto-fill,
-  minmax(16em, 1fr)
+  minmax(6em, 1fr)
   );
   gap: var(--gap);
 }
