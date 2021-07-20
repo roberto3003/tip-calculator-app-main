@@ -1,6 +1,6 @@
 :root {
   --padding: 1em;
-  --gap: 4em;
+  --gap: 2em;
   --font-size: clamp(1rem, 1.25vw, 2.5rem);
   --letter-spacing: 0.3em;
   --nav-icon: 3em;
@@ -217,6 +217,8 @@ section, .section  {
 .cta {
   background-color: var(--accent);
   border: 0.1em  solid var(--accent);
+  width: 95%;
+  max-width: initial;
 }
 
 .cta:hover {
@@ -263,11 +265,20 @@ a:visited {
   align-items: start;
 }
 
+.calculator, .results, .tip {
+  border-radius: var(--padding);
+  padding: var(--padding);
+}
+
 .calculator {
   background-color: var(--theme);
 }
 
-.results {
+.results, .tip {
   background-color: var(--contrast);
 }
 
+.tip {
+  text-align: center;
+  letter-spacing: initial;
+}
