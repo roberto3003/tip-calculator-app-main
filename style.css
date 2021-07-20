@@ -24,12 +24,12 @@
 
 /* light-theme colors */
 :root {
-  --bg-color: floralwhite;
+  --bg-color: powderblue;
   --text: var(--black);
   --text-contrast: var(--white);
   --theme: var(--white);
   --medium: lavender;
-  --contrast: lightsteelblue;
+  --contrast: beige;
   --accent: slateblue;
   --white: white;
   --black: rgba(46, 49, 49, 1);
@@ -263,4 +263,11 @@ a:visited {
   align-items: start;
 }
 
+.calculator {
+  background-color: var(--theme);
+}
+
+.results {
+  background-color: var(--contrast);
+}
 
