@@ -199,6 +199,9 @@ section, .section  {
   margin-block-end: calc(var(--padding)*6);
 }
 
+button {
+  border: none;
+}
 
 .button {
   border-radius: var(--padding);
@@ -225,7 +228,7 @@ section, .section  {
   background-color: var(--text);
 }
 
-.cta a, .cta a:visited {
+.cta h2, .cta h2:visited {
   color: var(--text-contrast);
 }
 
