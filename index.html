@@ -11,12 +11,14 @@
 	<div class="wrapper flex-center">
 	  <div class="container">
 		<h2 class="center">SPLI<br>TTER</h2>
+		<hr>
 		<div class="calculator flex two">
 		  <div class="selections">
 			<div class="bill">
 			  <h3>Bill</h3>
 			  <input type="number" min="0" max="1000" step="0.25" name="bill amount" required="required" placeholder="$">
 			</div>
+			<hr>
 			<div class="selected-tip">
 			  <h3>Select Tip %</h3>
 			  <div class="tip-rates flex three">
@@ -27,7 +29,7 @@
 				  <button class="tip">
 					<h2>10%</h2>
 				  </button>
-				  <button class="tip">
+				  <button class="tip default">
 					<h2>15%</h2>
 				  </button>
 				  <button class="tip">
@@ -36,12 +38,12 @@
 				  <button class="tip">
 					<h2>50%</h2>
 				  </button>
-				  <button class="tip">
-					<h2>Custom</h2>
-				  </button>
+				  <input class="custom" type="number" min="1" max="100" step="1" name="my percentage" placeholder="Custom %">
+				  </input>
 				</div>
 			  </div>
 			</div>
+			<hr>
 			<div class="n-of-people">
 			  <h3>Number of People</h3>
 			  <input type="number" min="2" max="100" step="1" name="number of people" required="required" placeholder="2">

@@ -6,22 +6,6 @@
   --nav-icon: 3em;
 }
 
-/* dark-theme colors */
-:root {
-  --bg-color: midnightblue;
-  --text: var(--white);
-  --text-contrast: var(--black);
-  --theme: lightsteelblue;
-  --contrast: rebeccapurple;
-  --medium: indigo;
-  --accent: coral;
-  --white: white;
-  --black: rgba(46, 49, 49, 1);
-  --shadow: unset;
-  --shadow-deep: unset;
-}
-
-
 /* light-theme colors */
 :root {
   --bg-color: powderblue;
@@ -29,13 +13,32 @@
   --text-contrast: var(--white);
   --theme: var(--white);
   --medium: honeydew;
+  --medium2: wheat;
   --contrast: beige;
   --accent: teal;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
-  --shadow-deep: 0 0.5vw 2vw  0 rgba(0,0,0,0.2);
+} 
+
+/* dark-theme colors */
+:root {
+  --bg-color: teal;
+  --text: var(--white);
+  --text-contrast: var(--black);
+  --theme: var(--black);
+  --contrast: darkslategrey;
+  --medium: darkcyan;
+  --medium2: seagreen;
+  --accent: aquamarine;
+  --white: white;
+  --black: rgba(46, 49, 49, 1);
+  --shadow: unset;
+  --shadow-deep: unset;
+ --shadow-deep: 0 0.5vw 2vw  0 rgba(0,0,0,0.2);
 }
+
+
 
 
 html {
@@ -71,6 +74,7 @@ hr {
 
 input {
   font: inherit;
+  color: var(--text);
   max-width: 75vw;
 }
 
@@ -117,7 +121,7 @@ footer .wrapper {
   display: grid;
   grid-template-columns: repeat(
   auto-fill,
-  minmax(6em, 1fr)
+  minmax(8em, 1fr)
   );
   gap: var(--gap);
 }
@@ -209,7 +213,12 @@ input {
     font-weight: bold;
   }
 
+::placeholder {
+  color: var(--text);
+}
+
 button {
+  color: var(--text);
   border: none;
 }
 
@@ -296,6 +305,20 @@ input, .calculator, .results, .tip {
   letter-spacing: initial;
 }
 
+.default {
+  background-color: var(--medium2);
+}
+
+.custom {
+  width: initial;
+  align-self: center;
+}
+
+.n-of-people {
+  padding-block-end: var(--padding);
+}
+
+
 .digits {
   margin-inline-start: auto;
 }
@@ -310,4 +333,8 @@ input, .calculator, .results, .tip {
 
 .results .button {
   margin-block-start: auto;
+}
+
+.description {
+  margin-block-start: var(--padding);
 }
