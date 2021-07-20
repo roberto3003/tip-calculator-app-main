@@ -15,7 +15,7 @@
 		  <div class="selections">
 			<div class="bill">
 			  <h3>Bill</h3>
-			  <input type="">
+			  <input type="number" min="0" max="1000" step="0.25" name="bill amount" required="required" placeholder="$">
 			</div>
 			<div class="selected-tip">
 			  <h3>Select Tip %</h3>
@@ -44,25 +44,26 @@
 			</div>
 			<div class="n-of-people">
 			  <h3>Number of People</h3>
-			  <input type="">
+			  <input type="number" min="2" max="100" step="1" name="number of people" required="required" placeholder="2">
 			</div>
 		  </div>
 		  <div class="results flex column">
-			<div class="tip-amount flex two">
+			<div class="tip-amount flex">
 			  <div class="description">
 				<h3>Tip Amount</h3>
 				<p>/ person</p>
-				<div class="digits">
-				  <h1></h1>
-				</div>
 			  </div>
+				<div class="digits">
+				  <h1>$ 4.27</h1>
+				</div>
 			</div>
-			<div class="total flex two"></div>
+			<div class="total flex">
 			<div class="description">
 			  <h3>Total</h3>
 			  <p>/ person</p>
+			</div>
 			  <div class="digits">
-				<h1></h1>
+				<h1>$ 32.79</h1>
 			  </div>
 			</div>
 			<button class="button cta">

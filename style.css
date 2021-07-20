@@ -28,9 +28,9 @@
   --text: var(--black);
   --text-contrast: var(--white);
   --theme: var(--white);
-  --medium: lavender;
+  --medium: honeydew;
   --contrast: beige;
-  --accent: slateblue;
+  --accent: teal;
   --white: white;
   --black: rgba(46, 49, 49, 1);
   --shadow: 0 0.25vw 1vw  0 rgba(0,0,0,0.2);
@@ -71,6 +71,7 @@ hr {
 
 input {
   font: inherit;
+  max-width: 75vw;
 }
 
 input:not(:placeholder-shown):invalid {
@@ -199,6 +200,15 @@ section, .section  {
   margin-block-end: calc(var(--padding)*6);
 }
 
+input {
+    text-align: end;
+    width: 95%;
+    background-color: var(--medium);
+    height: 1em;
+    border: none;
+    font-weight: bold;
+  }
+
 button {
   border: none;
 }
@@ -268,7 +278,7 @@ a:visited {
   align-items: start;
 }
 
-.calculator, .results, .tip {
+input, .calculator, .results, .tip {
   border-radius: var(--padding);
   padding: var(--padding);
 }
@@ -284,4 +294,20 @@ a:visited {
 .tip {
   text-align: center;
   letter-spacing: initial;
+}
+
+.digits {
+  margin-inline-start: auto;
+}
+
+.results > * {
+  gap: 0;
+}
+
+.results p, .results h3 {
+  margin: 0;
+}
+
+.results .button {
+  margin-block-start: auto;
 }
